@@ -68,10 +68,11 @@ Example `.env` file:
 
 ```plaintext
 API_URL=https://data.nasa.gov/resource/y77d-th95.json
+```
 
 ## Tests
 
-**Install Node.js dependencies**:
+1. **Install Node.js dependencies**:
     ```bash
     npm install
     ```
@@ -80,4 +81,3 @@ API_URL=https://data.nasa.gov/resource/y77d-th95.json
     ```bash
     npm test
     ```
-    
