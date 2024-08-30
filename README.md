@@ -10,7 +10,6 @@ This project analyzes data from NASA's Earth Meteorite Landings dataset. It prov
   - [Running with Docker](#running-with-docker)
   - [Running with Python](#running-with-python)
 - [Environment Variables](#environment-variables)
-- [Usage](#usage)
 
 ## Requirements
 
@@ -38,12 +37,12 @@ Before running this project, ensure you have one of the following setups:
 
 1. **Build the Docker image**:
     ```bash
-    docker build -t meteorite-app .
+    docker build -t meteorite-analyze .
     ```
 
 2. **Run the Docker container**:
     ```bash
-    docker run -it --rm meteorite-app
+    docker run -it --rm meteorite-analyze
     ```
 
 ### Running with Python
