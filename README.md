@@ -1,6 +1,6 @@
 # Meteorite Landings Analyzer
 
-This project analyzes data from NASA's Earth Meteorite Landings dataset. It provides information on the total number of entries, the most massive meteorite, and the most frequent year of meteorite landings.
+This project analyzes data from NASA's Earth Meteorite Landings dataset.
 
 ## Table of Contents
 
@@ -62,7 +62,7 @@ Before running this project, ensure you have one of the following setups:
 
 The application uses the following environment variable:
 
-- `API_URL`: URL to fetch the meteorite landings data. This can be configured in a `.env` file for Docker or directly in your environment.
+- `API_URL`: URL to fetch the meteorite landings data.
 
 Example `.env` file:
 
