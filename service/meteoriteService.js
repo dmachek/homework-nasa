@@ -7,8 +7,11 @@ class MeteoriteService {
 
     async fetchMeteoriteData() {
         try {
-            console.log(`Fetching meteorite data from ${this.apiUrl}...`.bgCyan + "\n");
-            return await HttpClient.fetch(this.apiUrl);
+            console.log(`Fetching meteorite data from ${this.apiUrl}...`.bgCyan);
+            return await HttpClient.fetch(this.apiUrl).finally(() => {
+                console.log(`Meteorite data fetched!`.bgGreen + "\n");
+            }
+        );
         } catch (error) {
             console.error(`Failed to fetch meteorite data: ${error}`.red);
             throw error;

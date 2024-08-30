@@ -25,9 +25,9 @@ class MeteoriteController {
     }
 
     displayData(stats) {
-        console.log(`Total entries: `.green + `${stats.totalEntries}`.bgMagenta);
-        console.log(`Most massive meteorite: `.green + `${stats.maxMeteorite.name}`.bgMagenta + ` with mass `.green + `${stats.maxMeteorite.mass}`.bgMagenta);
-        console.log(`Most frequent year(s): `.green + `${stats.mostFrequentYear.map(year => year)}`.bgMagenta);
+        console.log(`Total entries: `.green + `${stats.totalEntries}`.bgBlue);
+        console.log(`Most massive meteorite: `.green + `${stats.maxMeteorite.name}`.bgBlue + ` with mass `.green + `${stats.maxMeteorite.mass}`.bgBlue);
+        console.log(`Most frequent year(s): `.green + `${stats.mostFrequentYear.map(year => year)}`.bgBlue);
     }
 
 }
