@@ -19,9 +19,16 @@ class MeteoriteService {
     }
 
     findMostMassiveMeteorite(meteorites) {
-        return meteorites.reduce((max, meteorite) => {
-            return (meteorite.mass && parseFloat(meteorite.mass) > parseFloat(max.mass)) ? meteorite : max;
+        const maxMeteorite = meteorites.reduce((max, meteorite) => {
+            if (meteorite.mass && parseFloat(meteorite.mass) > parseFloat(max.mass)) {
+                return meteorite;
+            }
+            return max;
         }, { mass: '0' });
+    
+        const isUnique = meteorites.filter(m => parseFloat(m.mass) === parseFloat(maxMeteorite.mass)).length === 1;
+    
+        return isUnique ? maxMeteorite : "No unique most massive meteorite found, there is a tie";
     }
 
     findMostFrequentYear(meteorites) {
