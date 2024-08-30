@@ -10,6 +10,7 @@ This project analyzes data from NASA's Earth Meteorite Landings dataset. It prov
   - [Running with Docker](#running-with-docker)
   - [Running with Python](#running-with-python)
 - [Environment Variables](#environment-variables)
+- [Tests](#tests)
 
 ## Requirements
 
@@ -67,3 +68,16 @@ Example `.env` file:
 
 ```plaintext
 API_URL=https://data.nasa.gov/resource/y77d-th95.json
+
+## Tests
+
+**Install Node.js dependencies**:
+    ```bash
+    npm install
+    ```
+
+2. **Run the tests**:
+    ```bash
+    npm test
+    ```
+    
